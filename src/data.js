@@ -76,13 +76,16 @@ class illPeople {
                 name: String,
                 value: Number
             }
+            // echarts的地区需要加上“市”.....
             if (this.mapName !== 'china' && this.mapName !== '上海') {                
                 obj.name = key.name + '市';
-            } else if (this.mapName == '上海') {                
+            } else if (this.mapName == '上海') {  
+                // 针对上海地区的名字的纠正
                 obj.name = key.name + '区'
             } else {
                 obj.name = key.name
             }
+            // 几个特别的地区的名字处理纠正成echarts能接受的
             if (key.name === '保山市'||key.name === '丽江市'||key.name === '昭通市') {
                 obj.name = key.name
             }

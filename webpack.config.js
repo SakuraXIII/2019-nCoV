@@ -15,6 +15,7 @@ module.exports = {
         port: 3000,
         hot: true,
         contentBase: './src',
+        // 使用代理服务器，解决浏览器的跨域问题
         proxy: {
             '/api': {
                 target: 'https://view.inews.qq.com/g2',
@@ -42,14 +43,6 @@ module.exports = {
                 test: /\.vue$/,
                 loader: 'vue-loader'
             },
-            // {
-            //     test: /\.(png|jpe?g|gif|svg)(\?\S*)?$/,
-            //     loader: 'file-loader',
-            //     options: {
-            //         name: '[name].[ext]?[hash:5]',
-            //         outputPath: './source/images'
-            //     }
-            // },
             {
                 test: /\.(png)|(jpg)|(gif)|(woff)|(svg)|(eot)|(ttf)$/,
                 use: [{
