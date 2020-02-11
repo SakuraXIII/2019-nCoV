@@ -100,7 +100,6 @@ export default {
                         show: true,
                         fontSize: 8
                     },
-                    roam: 'scale',
                     scaleLimit: {
                         max: 1.5,
                         min: 0.5
