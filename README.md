@@ -5,8 +5,9 @@
 1. 数据同border-1px来自腾讯新闻
 2. 主要使用了Vue、ElementUI、Webpack、Echarts
 3. [线上示例](http://120.25.204.190/dist/)
+4. [本人博客](https://tonyteachers.gitee.io/)
 
-### 食用方法daba
+### 结构
 ```  
 ├─dist
 │  ├─index.html
